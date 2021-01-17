@@ -27,8 +27,8 @@ const App: React.FC = () => {
         onChange={(e) => {handleChange(e.target.value)}}
       ></input>
       {submitBool 
-      ? <DecimalAge date={date} /> 
-      : <button id="submit" onClick={() => handleSubmit()}>Submit</button>
+        ? <DecimalAge date={date} /> 
+        : <button id="submit" onClick={() => handleSubmit()}>Submit</button>
       }
       <h1 className="errorTag">{ err }</h1>
 		</div>
