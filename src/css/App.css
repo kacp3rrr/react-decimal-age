@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap");
+
+body {
+  color: #bfd4d9;
+  background-color: #1f3135;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.App {
+  text-align: center;
+}
+
+/* Removes the clear button from date inputs */
+input[type="date"]::-webkit-clear-button {
+  display: none;
+}
+
+/* Removes the spin button */
+input[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+/* Always display the drop down caret */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: #2c3e50;
+}
+
+/* A few custom styles for date inputs */
+input[type="date"] {
+  appearance: none;
+  -webkit-appearance: none;
+  color: #7e7070;
+  font-family: 'Bebas Neue';
+  font-size: 18px;
+  background: #bfd4d9;
+  padding: 5px;
+  margin: 10px;
+  display: inline-block !important;
+  visibility: visible !important;
+  border-radius: 5px;
+  min-height: 10px;
+}
+
+input[type="date"],
+focus {
+  color: #000000;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+
+#submit {
+  background-color: #bfd4d9;
+  font-family: 'Bebas Neue';
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 5px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 19px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#submit:hover {
+  box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.24), 0 10px 30px 0 rgba(0, 0, 0, 0.19);
+}
